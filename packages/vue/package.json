@@ -1,65 +1,65 @@
 {
-  "name": "@ugarit/stream-vue",
-  "version": "1.00.00",
-  "description": "Ugarit streaming hooks for Vue",
-  "keywords": [
-    "ugarit",
-    "stream",
-    "use-stream",
-    "server-sent-events",
-    "sse",
-    "vue",
-    "composables"
-  ],
-  "homepage": "https://github.com/ugarit/stream/tree/main/packages/vue#readme",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ugarit/stream.git"
-  },
-  "bugs": {
-    "url": "https://github.com/ugarit/stream/issues"
-  },
-  "license": "MIT",
-  "author": {
-    "name": "Taylor Otwell"
-  },
-  "type": "module",
-  "main": "dist/index.umd.js",
-  "module": "dist/index.es.js",
-  "types": "dist/index.d.ts",
-  "exports": {
-    ".": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/index.es.js",
-      "require": "./dist/index.umd.js"
+    "name": "@ugarit/stream-vue",
+    "version": "1.00.00",
+    "description": "Ugarit streaming hooks for Vue",
+    "keywords": [
+        "ugarit",
+        "stream",
+        "use-stream",
+        "server-sent-events",
+        "sse",
+        "vue",
+        "composables"
+    ],
+    "homepage": "https://github.com/ugarit/stream/tree/main/packages/vue#readme",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ugarit/stream.git"
+    },
+    "bugs": {
+        "url": "https://github.com/ugarit/stream/issues"
+    },
+    "license": "MIT",
+    "author": {
+        "name": "Taylor Otwell"
+    },
+    "type": "module",
+    "main": "dist/index.umd.js",
+    "module": "dist/index.es.js",
+    "types": "dist/index.d.ts",
+    "exports": {
+        ".": {
+            "types": "./dist/index.d.ts",
+            "import": "./dist/index.es.js",
+            "require": "./dist/index.umd.js"
+        }
+    },
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "build": "vite build",
+        "lint": "eslint --config eslint.config.mjs \"src/**/*.ts\"",
+        "prepublish": "pnpm run build",
+        "release": "vitest --run && pnpm publish --no-git-checks",
+        "test": "vitest",
+        "format": "prettier --write ."
+    },
+    "devDependencies": {
+        "@types/node": "^22.14.0",
+        "@typescript-eslint/eslint-plugin": "^8.56.0",
+        "@typescript-eslint/parser": "^8.56.0",
+        "@vitejs/plugin-vue": "^6.0.0",
+        "eslint": "^10.0.0",
+        "jsdom": "^26.0.0",
+        "msw": "^2.12.0",
+        "prettier": "^3.8.1",
+        "typescript": "^5.9.0",
+        "vite": "^7.3.5",
+        "vite-plugin-dts": "^4.5.4",
+        "vitest": "^4.1.11"
+    },
+    "peerDependencies": {
+        "vue": "^3.3.0"
     }
-  },
-  "files": [
-    "dist"
-  ],
-  "scripts": {
-    "build": "vite build",
-    "lint": "eslint --config eslint.config.mjs \"src/**/*.ts\"",
-    "prepublish": "pnpm run build",
-    "release": "vitest --run && pnpm publish --no-git-checks",
-    "test": "vitest",
-    "format": "prettier --write ."
-  },
-  "devDependencies": {
-    "@types/node": "^22.14.0",
-    "@typescript-eslint/eslint-plugin": "^8.56.0",
-    "@typescript-eslint/parser": "^8.56.0",
-    "@vitejs/plugin-vue": "^6.0.0",
-    "eslint": "^10.0.0",
-    "jsdom": "^26.0.0",
-    "msw": "^2.12.0",
-    "prettier": "^3.8.1",
-    "typescript": "^5.9.0",
-    "vite": "^7.3.5",
-    "vite-plugin-dts": "^4.5.4",
-    "vitest": "^4.1.11"
-  },
-  "peerDependencies": {
-    "vue": "^3.3.0"
-  }
 }

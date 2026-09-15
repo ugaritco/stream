@@ -1,68 +1,68 @@
 {
-  "name": "@ugarit/stream-svelte",
-  "version": "1.00.00",
-  "description": "Ugarit streaming helpers for Svelte 5",
-  "keywords": [
-    "ugarit",
-    "stream",
-    "use-stream",
-    "server-sent-events",
-    "sse",
-    "svelte",
-    "svelte5",
-    "runes"
-  ],
-  "homepage": "https://github.com/ugarit/stream/tree/main/packages/svelte#readme",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ugarit/stream.git"
-  },
-  "bugs": {
-    "url": "https://github.com/ugarit/stream/issues"
-  },
-  "license": "MIT",
-  "author": {
-    "name": "Taylor Otwell"
-  },
-  "type": "module",
-  "main": "dist/index.umd.js",
-  "module": "dist/index.es.js",
-  "types": "dist/index.d.ts",
-  "exports": {
-    ".": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/index.es.js",
-      "require": "./dist/index.umd.js"
+    "name": "@ugarit/stream-svelte",
+    "version": "1.00.00",
+    "description": "Ugarit streaming helpers for Svelte 5",
+    "keywords": [
+        "ugarit",
+        "stream",
+        "use-stream",
+        "server-sent-events",
+        "sse",
+        "svelte",
+        "svelte5",
+        "runes"
+    ],
+    "homepage": "https://github.com/ugarit/stream/tree/main/packages/svelte#readme",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ugarit/stream.git"
+    },
+    "bugs": {
+        "url": "https://github.com/ugarit/stream/issues"
+    },
+    "license": "MIT",
+    "author": {
+        "name": "Taylor Otwell"
+    },
+    "type": "module",
+    "main": "dist/index.umd.js",
+    "module": "dist/index.es.js",
+    "types": "dist/index.d.ts",
+    "exports": {
+        ".": {
+            "types": "./dist/index.d.ts",
+            "import": "./dist/index.es.js",
+            "require": "./dist/index.umd.js"
+        }
+    },
+    "svelte": "./dist/index.es.js",
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "build": "vite build",
+        "lint": "eslint --config eslint.config.mjs \"src/**/*.ts\" \"src/**/*.svelte.ts\"",
+        "prepublish": "pnpm run build",
+        "release": "vitest --run && pnpm publish --no-git-checks",
+        "test": "vitest",
+        "format": "prettier --write ."
+    },
+    "devDependencies": {
+        "@types/node": "^22.14.0",
+        "esbuild": "^0.28.1",
+        "@typescript-eslint/eslint-plugin": "^8.56.0",
+        "@typescript-eslint/parser": "^8.56.0",
+        "eslint": "^10.0.0",
+        "jsdom": "^26.0.0",
+        "msw": "^2.12.0",
+        "prettier": "^3.8.1",
+        "svelte": "^5.55.7",
+        "typescript": "^5.9.0",
+        "vite": "^7.3.5",
+        "vite-plugin-dts": "^4.5.4",
+        "vitest": "^4.1.11"
+    },
+    "peerDependencies": {
+        "svelte": "^5.0.0"
     }
-  },
-  "svelte": "./dist/index.es.js",
-  "files": [
-    "dist"
-  ],
-  "scripts": {
-    "build": "vite build",
-    "lint": "eslint --config eslint.config.mjs \"src/**/*.ts\" \"src/**/*.svelte.ts\"",
-    "prepublish": "pnpm run build",
-    "release": "vitest --run && pnpm publish --no-git-checks",
-    "test": "vitest",
-    "format": "prettier --write ."
-  },
-  "devDependencies": {
-    "@types/node": "^22.14.0",
-    "esbuild": "^0.28.1",
-    "@typescript-eslint/eslint-plugin": "^8.56.0",
-    "@typescript-eslint/parser": "^8.56.0",
-    "eslint": "^10.0.0",
-    "jsdom": "^26.0.0",
-    "msw": "^2.12.0",
-    "prettier": "^3.8.1",
-    "svelte": "^5.55.7",
-    "typescript": "^5.9.0",
-    "vite": "^7.3.5",
-    "vite-plugin-dts": "^4.5.4",
-    "vitest": "^4.1.11"
-  },
-  "peerDependencies": {
-    "svelte": "^5.0.0"
-  }
 }
