@@ -1,0 +1,34 @@
+{
+  "description": "Ugarit streaming hooks for React and Vue",
+  "keywords": [
+    "ugarit",
+    "stream",
+    "use-stream",
+    "server-sent-events",
+    "sse",
+    "react",
+    "vue",
+    "hooks",
+    "composables"
+  ],
+  "author": "Taylor Otwell",
+  "license": "MIT",
+  "homepage": "https://github.com/ugarit/stream#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ugarit/stream.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ugarit/stream/issues"
+  },
+  "scripts": {
+    "test": "pnpm -r --if-present run test",
+    "build": "pnpm -r --if-present run build",
+    "lint": "pnpm -r --if-present run lint",
+    "format": "pnpm -r --if-present run format"
+  },
+  "devDependencies": {
+    "prettier": "^3.8.3"
+  },
+  "version": "1.00.00"
+}
